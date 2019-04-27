@@ -1,0 +1,12 @@
+run MainLogic/Scanner.py
+
+txts:
+    error.txt   词法分析的错误token
+    orders.txt  三地址指令与四元组等
+    symbol_table.txt    符号表
+    test.c  输入待测试程序
+    token.txt   词法分析出的各个token
+    tree.txt    语法分析的语法树(追加)
+
+rule:
+    parse.txt   语法规则

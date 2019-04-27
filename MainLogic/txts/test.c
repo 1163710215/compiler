@@ -1,4 +1,4 @@
-int m,z=12;   /*连续声明，赋值，8进制、16进制*/
+int m,z;   /*连续声明，赋值*/
 
 m = 2+3*4;      /*赋值，生成三地址指令时，考虑优先级*/
 
@@ -7,38 +7,63 @@ float b = 1;     /*浮点型声明，自动类型转化*/
 int[2][4] h;    /*多维数组的声明*/
 
 int[3] a;       /*数组声明*/
-
-a[0] = 2;       /*数组的赋值和引用*/
-
-while(m>2)      /*循环语句*/
-do
-if(m<8)  	/*嵌套的分支语句*/
-then m = m +1;
-else m = m*2;
-
-switch(m){	/*switch语句的识别和应用*/
-  case 1:
-  m = m +1;
-  case 2:
-  m = m + 3;
-  default:
-  m = m +6;
-}
-
-int i;
-for(i = 0;i<10;i++){  /*for语句*/
-  m = m+2;
-}
-
-record stack{    /*记录的声明，这里声明了一个栈结构*/
-  int num;
-}
-
-/*过程声明，声明一个返回值为int的求和函数*/
-proc int getSum(int x,int y){
-   int j = x;
-   int k = y;
-   return j+k;
-}
-call getSum(1,2);    /*函数调用*/
+z=1
+//
+//a[0] = 2;       /*数组的赋值和引用*/
+//
+//while(m>2)      /*循环语句*/
+//do{
+//j=2;}
+//
+//if(m<8)  	/*嵌套的分支语句*/
+//then m = m +1;
+//else m = m*2;
+//m=1;
+//
+//switch(m){	/*switch语句的识别和应用*/
+//  case 1:
+//  m = m +1;
+//  case 2:
+//  m = m + 3;
+//  default:
+//  m = m +6;
+//}
+//
+//int i;
+//for(i = 0;i<10;i++){  /*for语句*/
+//  m = m+2;
+//}
+//
+//record stack{    /*记录的声明，这里声明了一个栈结构*/
+//  int num;
+//}
+//
+///*过程声明，声明一个返回值为int的求和函数*/
+//proc int getSum(int x,int y){
+//   int j = x;
+//   int k = y;
+//   return j+k;
+//}
+//call getSum(1,2);    /*函数调用*/
 $
+
+//int x = -1;
+//$
+
+//这是错误的测试程序
+/*词法错误*/
+//int d = 1.0E-;   /*错误的常数格式*/
+//$
+/*语法错误*/
+//int a *;	 /*多了个乘号*/
+//record stack     /*少了左大括号*/
+// int e;}
+
+//
+//b[1.0] = 1; 	 /*数组操作符中不是整数*/
+//proc int addSum（int x,int y){   /*使用了中文的括号*/
+//
+//  return c;	 /*返回类型和声明的函数返回类型不匹配*/
+//}
+
+//$

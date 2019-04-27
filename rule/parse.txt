@@ -19,7 +19,7 @@ C   [ digit ] C
 C
 S   L = E ;
 S   if B then S else S
-S   while B do S
+S   while B do { S }
 S   call id ( Elist );
 S   return E;
 S   switch ( id ) { N default : S }

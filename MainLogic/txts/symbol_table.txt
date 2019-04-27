@@ -1,48 +1,5 @@
- int 	 17  
-  m  	 100 
-  ,  	 48  
-  z  	 100 
-     	 100 
- 12  	 100 
-  ;  	 70  
-  2  	 100 
-  3  	 100 
-  *  	 35  
-  4  	 100 
-float	 13  
-  b  	 100 
-  1  	 100 
-  [  	 60  
-  ]  	 61  
-  h  	 100 
-  a  	 100 
-  0  	 100 
-while	 32  
-  (  	 45  
-  )  	 46  
- do  	  8  
- if  	 16  
-  8  	 100 
-then 	 71  
-else 	 10  
-switch	 26  
-  {  	 62  
-case 	  3  
-  :  	 67  
-default	  7  
-  6  	 100 
-  }  	 63  
-  i  	 100 
- for 	 14  
- 10  	 100 
-record	 74  
-stack	 100 
- num 	 100 
-proc 	 69  
-getSum	 100 
-  x  	 100 
-  y  	 100 
-  j  	 100 
-  k  	 100 
-return	 20  
-call 	 76  
+|  m  |             int              |  0  |
+|  z  |             int              |  4  |
+|  b  |            float             |  0  |
+|  h  |    array(2,array(4,int))     |  0  |
+|  a  |         array(3,int)         |  0  |

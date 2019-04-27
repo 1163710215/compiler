@@ -2,7 +2,6 @@ import string
 
 from MainLogic import Category
 from MainLogic import FileAccess
-
 from MainLogic import Parsing
 
 _currentIndex = 0
@@ -213,7 +212,8 @@ def scan(helper):
             return
 
             # print(helper.symbolTable)
-        helper.setSymbolTable(currentToken, getType(currentToken)[0], getType(currentToken)[1])
+        # if getType(currentToken)[0] == 'id':
+        #     helper.setSymbolTable(currentToken, getType(currentToken)[0], getType(currentToken)[1])
 
 
 def show(helper):

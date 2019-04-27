@@ -30,18 +30,18 @@ class FileHelper(object):
             self.tokenFp.write("<{1:^5},{0:^5},{2:^5}>\n".format(tokenSelf, tokenInner, tokenNo))
         print("<{1:^5},{0:^5},{2:^5}>".format(tokenSelf, tokenInner, tokenNo))
 
-    def setSymbolTable(self, tokenSelf, tokenInner, tokenNo):
-        '''output symbol into symbol table'''
-        if not self.symbolTable.keys().__contains__(tokenSelf):
-            self.symbolTable[tokenSelf] = tokenNo
-
-    def writeSymbolToFile(self):
-        for k in self.symbolTable:
-            self.symbolTableFp.write("{:^5}\t{:^5}\n".format(k, self.symbolTable[k]))
+    # def setSymbolTable(self, tokenSelf, tokenInner, tokenNo):
+    #     '''output symbol into symbol table'''
+    #     if not self.symbolTable.keys().__contains__(tokenSelf):
+    #         self.symbolTable[tokenSelf] = tokenNo
+    #
+    # def writeSymbolToFile(self):
+    #     for k in self.symbolTable:
+    #         self.symbolTableFp.write("{:^5}\t{:^5}\n".format(k, self.symbolTable[k]))
 
     def closeFiles(self):
         '''close token Files'''
-        self.writeSymbolToFile()
+        # self.writeSymbolToFile()
         if self.tokenFp != None:
             self.tokenFp.close()
         if self.symbolTableFp != None:
